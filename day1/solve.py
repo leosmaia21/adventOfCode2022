@@ -1,7 +1,4 @@
-
-data = []
 elf = 0
-meal = 0
 max = 0
 elfmeals = 0
 
@@ -13,9 +10,9 @@ with open("input.txt") as f:
         if (line == "\n"):
             if (max < elfmeals):
                 max = elfmeals
+                elf = i
             total.append(elfmeals)
             elfmeals = 0
-            elf = i
         else:
             elfmeals += int(line)
 if (max < elfmeals):
@@ -23,7 +20,7 @@ if (max < elfmeals):
     total.append(max)
 
 total.sort(reverse=True)
-print("elf", i, "max", max)
+print("elf", elf, "max", max)
 print("sum 3:", total[0] + total[1] + total[2])
 
         
