@@ -6,6 +6,7 @@ total = []
 
 with open("input.txt") as f:
     lines = f.readlines()
+    print(lines)
     for i, line in enumerate(lines):
         if (line == "\n"):
             if (max < elfmeals):
