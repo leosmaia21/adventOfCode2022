@@ -1,4 +1,4 @@
-#! /bin/python3
+#!/bin/python3
 
 def isinrange(inicial, end, x):
   return 1 if int(x) >= int(inicial) and int(x) <= int(end) else 0
